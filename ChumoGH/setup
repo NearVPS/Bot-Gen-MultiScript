@@ -120,7 +120,7 @@ return
 clear&&clear
 update_pak
 clear&&clear
-sudo bash -c "$(curl -fsSL https://github.com/NearVPN/Bot-Gen-MultiScript/raw/main/ChumoGH/Files-BOT.Open/Varios/fileURL.sh)"
+sudo bash -c "$(curl -fsSL https://github.com/NearVPS/Bot-Gen-MultiScript/raw/main/ChumoGH/Files-BOT.Open/Varios/fileURL.sh)"
 rm -f instala.*
 echo -e " Duracion $((($(date +%s)-$TIME_START)/60)) min."
 read -p "Presiona Enter para Continuar"

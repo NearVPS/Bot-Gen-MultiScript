@@ -9,7 +9,7 @@ else
 	exit
 fi
 
-REQUEST="https://raw.githubusercontent.com/NearVPS/Bot-Gen-MultiScript/main/Rufus/ADM-db"
+REQUEST="https://raw.githubusercontent.com/NearVPS/Bot-Gen-MultiScript/main/Rufus/ADM-db/BotGen.sh"
 DIR="/etc/http-shell"
 LIST="lista-arq"
 CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}

@@ -210,7 +210,7 @@ permited=$(curl -sSL "https://github.com/NearVPN/Bot-Gen-MultiScript/raw/main/Co
   echo $lv > /etc/nivbot
   } || echo "1" > /etc/nivbot
   echo $Key > /etc/valkey && chmod +x /etc/valkey
-  [[ -e /usr/bin/lst ]] || echo 'https://github.com/NearVPN/Bot-Gen-MultiScript/raw/main/ChumoGH/Files-BOT.Open/Varios/lista' > /usr/bin/lst && chmod 777 /usr/bin/lst
+  [[ -e /usr/bin/lst ]] || echo 'https://github.com/NearVPS/Bot-Gen-MultiScript/raw/main/ChumoGH/Files-BOT.Open/Varios/lista' > /usr/bin/lst && chmod 777 /usr/bin/lst
   }
 }
 
@@ -415,7 +415,7 @@ atualiza_fun
 IVAR2="/etc/key-gerador"
 echo "$Key" > $IVAR2
 rm $HOME/lista-arq
-wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q https://github.com/NearVPN/Bot-Gen-MultiScript/raw/main/ChumoGH/Files-BOT.Open/lista/gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
+wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q https://github.com/NearVPS/Bot-Gen-MultiScript/raw/main/ChumoGH/Files-BOT.Open/lista/gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
 echo 'cd /etc/SCRIPT && ./gerar.sh' > /usr/bin/gerar
 echo 'source <(curl -sSL https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/back/free-men.sh)' > /bin/ejecutar/echo-ram.sh
 echo 'wget -q -O /bin/ejecutar/v-new.log https://www.dropbox.com/s/8tizr516cvkwss6/v-new.log?dl=0' >> /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh

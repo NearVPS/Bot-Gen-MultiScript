@@ -1,6 +1,13 @@
 #!/bin/bash
 # -*- ENCODING: UTF-8 -*-
 
+stopBot(){
+	printf "\n\n\033[33;1m              SALIENDO DEL MODO MONITOR\n\n"
+	sleep 3
+	exit
+}
+
+trap "stopBot" INT TERM
 
 CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
 CID="${CIDdir}/User-ID"
@@ -18,6 +25,10 @@ LINE="━━━━━━━━━━━━━━━"
 # Importando API
 source ${CIDdir}/ShellBot.sh
 source ${CIDdir}/botScript.sh
+source ${CIDdir}/ayuda
+source ${CIDdir}/id
+source ${CIDdir}/menu
+source ${CIDdir}/gerar_key
 
 #ID del administrador del bot
 admin_id="$(jq -r .users.admin.id < ${confJSON})"

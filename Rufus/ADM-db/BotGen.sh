@@ -1,14 +1,7 @@
 #!/bin/bash
 # -*- ENCODING: UTF-8 -*-
 
-stopBot(){
-	printf "\n\n\033[33;1m              SALIENDO DEL MODO MONITOR\n\n"
-	sleep 3
-	exit
-}
 
-trap "stopBot" INT TERM
-  
 CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
 CID="${CIDdir}/User-ID"
 NID="${CIDdir}/Key-ID"

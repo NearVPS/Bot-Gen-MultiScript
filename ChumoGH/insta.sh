@@ -183,7 +183,7 @@ permited=$(curl -sSL "https://github.com/NearVPS/Bot-Gen-MultiScript/raw/main/Co
   msg -bar
   echo -e "\n"
   echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) FUE RECHAZADA!"
-  echo -e " $link No AUTORIZADA el ACCESO "
+  echo -e " $link NTTo AUTORIZADA el ACCESO "
   echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
   echo -e "\e[31m=====================================================\n\n\n\e[0m"
   [[ -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
